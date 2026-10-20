@@ -1,0 +1,6 @@
+{
+  "name": "SPJPP Karo - Prioritas Jalan Produksi Pertanian",
+  "description": "Sistem Informasi Penilaian dan Perencanaan Prioritas Jalan Produksi Pertanian Berbasis Data Geo-Spasial dan Transparansi Anggaran Pemerintah Kabupaten Karo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#131b2e","surface-container-lowest":"#ffffff","on-error":"#ffffff","on-primary-fixed-variant":"#005137","surface-container":"#e5eeff","secondary-fixed-dim":"#bec6e0","on-error-container":"#93000a","primary-fixed":"#85f8c4","on-tertiary-fixed":"#2f1500","secondary-fixed":"#dae2fd","surface-variant":"#d3e4fe","surface-bright":"#f8f9ff","error":"#ba1a1a","surface":"#f8f9ff","on-secondary-fixed-variant":"#3f465c","on-surface-variant":"#3d4a42","surface-dim":"#cbdbf5","tertiary-fixed":"#ffdcc3","on-tertiary-container":"#fffbff","surface-container-highest":"#d3e4fe","tertiary-fixed-dim":"#ffb77d","on-secondary-container":"#5c647a","surface-tint":"#006c4a","outline":"#6d7a72","surface-container-high":"#dce9ff","tertiary":"#8d4b00","on-surface":"#0b1c30","on-primary-fixed":"#002114","on-primary":"#ffffff","on-primary-container":"#f5fff7","on-tertiary":"#ffffff","inverse-on-surface":"#eaf1ff","inverse-primary":"#68dba9","on-secondary":"#ffffff","secondary":"#565e74","background":"#f8f9ff","on-tertiary-fixed-variant":"#6e3900","inverse-surface":"#213145","on-background":"#0b1c30","primary-fixed-dim":"#68dba9","secondary-container":"#dae2fd","primary-container":"#00855d","primary":"#006948","surface-container-low":"#eff4ff","error-container":"#ffdad6","tertiary-container":"#b15f00","outline-variant":"#bccac0"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"2.25rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xs":"0.375rem","margin-md":"2rem","gutter-lg":"2rem","space-2xl":"3.5rem","space-2xs":"0.25rem","margin":"1rem","gutter-sm":"1rem","margin-lg":"3.5rem","gutter":"1.5rem","space-md":"1rem"},"fontFamily":{"body-sm":["Inter"],"headline-lg":["Inter"],"display-hero-mobile":["Inter"],"headline-sm":["Inter"],"headline-lg-mobile":["Inter"],"label-badge":["JetBrains Mono"],"code-data-lg":["JetBrains Mono"],"body-md":["Inter"],"headline-md":["Inter"],"display-hero":["Inter"],"code-data-md":["JetBrains Mono"],"body-lg":["Inter"]},"fontSize":{"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-hero-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-badge":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"code-data-lg":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-hero":["40px",{"lineHeight":"48px","letterSpacing":"-0.025em","fontWeight":"700"}],"code-data-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container font-headline-sm text-headline-sm"><span class="material-symbols-outlined text-[24px]">account_balance</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">SPJPP Karo</span><span class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider">Portal Transparansi Jalan Produksi Pertanian</span></div></div><nav class="hidden lg:flex items-center gap-space-sm" data-active-classes="bg-secondary-container text-on-secondary-container font-semibold rounded-lg"><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-secondary-container text-on-secondary-container font-semibold rounded-lg" data-path="beranda" href="#">Beranda</a><a class="px-space-md py-space-xs font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded-lg" data-path="peta-koridor" href="#">Peta Koridor</a><a class="px-space-md py-space-xs font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded-lg" data-path="daftar-10-prioritas" href="#">Daftar 10 Prioritas</a><a class="px-space-md py-space-xs font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded-lg" data-path="cara-kerja" href="#">Cara Kerja</a><a class="px-space-md py-space-xs font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded-lg" data-path="faq" href="#">FAQ</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center gap-space-xs px-space-md py-space-xs bg-primary text-on-primary font-body-md text-body-md rounded-lg shadow-sm hover:bg-primary-container hover:text-on-primary-container transition-colors" data-path="command-center-dputr" href="#"><span>Buka Command Center DPUTR</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative overflow-hidden bg-surface-container-lowest rounded-xl shadow-sm p-space-lg md:p-space-xl lg:p-space-2xl mb-space-2xl">
+<div class="absolute -right-24 -top-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-24 w-80 h-80 bg-secondary-container/30 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl flex flex-col items-start gap-space-md">
+<!-- Tagline Pill -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-2xs rounded-full bg-surface-container text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-badge text-label-badge text-on-surface-variant font-semibold tracking-wider">
+          TRANSPARANSI KEPUTUSAN INFRASTRUKTUR DAERAH • KABUPATEN KARO
+        </span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight">
+        Prioritas Jalan Produksi Pertanian Kabupaten Karo — <span class="text-primary">terbuka, berbasis data,</span> dapat dipertanggungjawabkan.
+      </h1>
+<!-- Subheading -->
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-3xl">
+        Pemerintah Kabupaten Karo membuka metodologi multikriteria objektif dalam penentuan prioritas penanganan jalan sentra komoditas hortikultura (wortel, kubis, tomat, kentang) demi memotong biaya logistik petani dan menjamin keadilan pembangunan.
+      </p>
+<!-- Quick CTA buttons -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm bg-primary text-on-primary font-body-md text-body-md font-semibold rounded-lg shadow-sm hover:bg-primary-container transition-all" href="#peta-koridor">
+<span class="material-symbols-outlined text-[20px]">map</span>
+<span>Jelajahi Peta Koridor Interaktif</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm bg-surface-container text-on-surface font-body-md text-body-md font-semibold rounded-lg hover:bg-surface-container-high transition-all" href="#top-10">
+<span class="material-symbols-outlined text-[20px]">format_list_numbered</span>
+<span>Lihat Top 10 Prioritas</span>
+</a>
+</div>
+</div>
+<!-- Live KPI Strip (4 Prominent Civic Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mt-space-xl pt-space-lg">
+<!-- Card 1 -->
+<div class="bg-surface rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="w-full h-1 bg-primary absolute top-0 left-0"></div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider">Kondisi Mantap 2024</span>
+<span class="material-symbols-outlined text-primary text-[20px]">timeline</span>
+</div>
+<div class="font-code-data-lg text-code-data-lg text-on-surface">63,43%</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm pt-space-xs">
+          Target Renstra <span class="font-semibold text-on-surface">66,00%</span> • Selisih 2,57% diprioritaskan lewat koridor pangan.
+        </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="w-full h-1 bg-primary absolute top-0 left-0"></div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider">Produksi 3 Komoditas 2025</span>
+<span class="material-symbols-outlined text-primary text-[20px]">agriculture</span>
+</div>
+<div class="font-code-data-lg text-code-data-lg text-on-surface">5,26 Jt Kuintal</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm pt-space-xs">
+          BPS resmi: Wortel 1,88 jt, Tomat 1,72 jt, Kubis 1,64 jt kuintal/tahun.
+        </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="w-full h-1 bg-secondary absolute top-0 left-0"></div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider">Luas Panen Terlayani</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">terrain</span>
+</div>
+<div class="font-code-data-lg text-code-data-lg text-on-surface">21.321 Ha</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm pt-space-xs">
+          Konsentrasi di Sentra Dataran Tinggi Sinabung–Sibayak &amp; Kabanjahe.
+        </p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="w-full h-1 bg-secondary absolute top-0 left-0"></div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider">Realisasi Inpres Jalan 2025</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">account_balance_wallet</span>
+</div>
+<div class="font-code-data-lg text-code-data-lg text-on-surface">Rp 10,67 Triliun</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm pt-space-xs">
+          Kebutuhan total Rp1.100 T; alokasi berbasis data objektif non-politis.
+        </p>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE MAP OF PRIORITY CORRIDORS SECTION -->
+<section class="mb-space-2xl scroll-mt-24" id="peta-koridor">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs text-primary mb-space-2xs">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+<span class="font-label-badge text-label-badge uppercase tracking-wider">Visualisasi Geospasial Multi-Agro</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Peta Publik Koridor Prioritas Pertanian</h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-2xs rounded bg-surface-container font-label-badge text-label-badge text-on-surface-variant">
+          Pembaruan: Maret 2025 (Lintas Instansi)
+        </span>
+</div>
+</div>
+<!-- Map Layout Container -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Interactive SVG Vector Map Canvas -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col justify-between relative overflow-hidden min-h-[480px]">
+<!-- Top Toolbar & Legend inside map -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm z-10 pb-space-xs">
+<div class="flex flex-wrap items-center gap-space-xs text-on-surface">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs bg-surface-container rounded flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span> Prioritas I (Kritis)
+            </span>
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs bg-surface-container rounded flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span> Prioritas II (Tinggi)
+            </span>
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs bg-surface-container rounded flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Prioritas III (Penyangga)
+            </span>
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs bg-surface-container rounded flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span> Titik Kumpul Pasar
+            </span>
+</div>
+<span class="font-label-badge text-label-badge bg-primary/10 text-primary px-space-sm py-space-2xs rounded">
+            GIS CRS: EPSG:4326 (WGS84)
+          </span>
+</div>
+<!-- Inline Vector Representation of Tanah Karo Agro Road Network -->
+<div class="relative w-full h-[380px] my-space-sm bg-surface-container-low rounded-xl flex items-center justify-center overflow-hidden">
+<svg class="w-full h-full text-on-surface" viewbox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="grid" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-opacity="0.04" stroke-width="1"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid)" height="500" width="800"></rect>
+<!-- Sinabung & Sibayak Topographic elevation silhouette -->
+<path d="M 120 280 Q 210 120 300 290 Z" fill="currentColor" fill-opacity="0.03"></path>
+<path d="M 440 220 Q 520 80 600 240 Z" fill="currentColor" fill-opacity="0.03"></path>
+<text fill="currentColor" fill-opacity="0.35" font-family="Inter" font-size="11" font-weight="600" text-anchor="middle" x="210" y="240">GUNUNG SINABUNG (KRB III)</text>
+<text fill="currentColor" fill-opacity="0.35" font-family="Inter" font-size="11" font-weight="600" text-anchor="middle" x="520" y="190">GUNUNG SIBAYAK</text>
+<!-- Major Regional Transport Linkages (Background) -->
+<path d="M 80 400 L 260 310 L 400 270 L 580 230 L 740 180" fill="none" stroke="currentColor" stroke-linecap="round" stroke-opacity="0.12" stroke-width="6"></path>
+<path d="M 400 270 L 420 420 L 590 460" fill="none" stroke="currentColor" stroke-linecap="round" stroke-opacity="0.12" stroke-width="5"></path>
+<!-- Priority Corridor 1: Berastagi - Simpang Empat (Crimson/Red) -->
+<g class="cursor-pointer group" id="corridor-1" onclick="selectCorridor('c1')">
+<path class="transition-all duration-300 group-hover:stroke-width-8" d="M 390 270 L 320 230 L 240 240 L 190 290" fill="none" stroke="#ba1a1a" stroke-dasharray="8 3" stroke-linecap="round" stroke-width="5"></path>
+<circle cx="240" cy="240" fill="#ba1a1a" r="6"></circle>
+<text fill="#ba1a1a" font-family="Inter" font-size="11" font-weight="700" x="245" y="225">KORIDOR 1: Simpang Empat - Beganding (Wortel &amp; Tomat)</text>
+</g>
+<!-- Priority Corridor 2: Tigapanah - Merek (Orange/Amber) -->
+<g class="cursor-pointer group" id="corridor-2" onclick="selectCorridor('c2')">
+<path class="transition-all duration-300 group-hover:stroke-width-8" d="M 420 310 L 520 340 L 630 380 L 700 440" fill="none" stroke="#b15f00" stroke-linecap="round" stroke-width="5"></path>
+<circle cx="630" cy="380" fill="#b15f00" r="5"></circle>
+<text fill="#b15f00" font-family="Inter" font-size="11" font-weight="700" x="550" y="360">KORIDOR 2: Tigapanah - Merek</text>
+</g>
+<!-- Priority Corridor 3: Barusjahe - Dolok (Secondary) -->
+<g class="cursor-pointer group" id="corridor-3" onclick="selectCorridor('c3')">
+<path class="transition-all duration-300 group-hover:stroke-width-6" d="M 410 260 L 510 220 L 610 200 L 670 160" fill="none" stroke="#565e74" stroke-dasharray="4 4" stroke-linecap="round" stroke-width="4"></path>
+<circle cx="510" cy="220" fill="#565e74" r="5"></circle>
+<text fill="#565e74" font-family="Inter" font-size="10" font-weight="600" x="520" y="210">KORIDOR 3: Barusjahe - Sukajulu</text>
+</g>
+<!-- Priority Corridor 4: Naman Teran Lingkar Sinabung (Error/High Alert) -->
+<g class="cursor-pointer group" id="corridor-4" onclick="selectCorridor('c4')">
+<path class="transition-all duration-300 group-hover:stroke-width-6" d="M 190 290 L 150 250 L 170 190 L 250 170" fill="none" stroke="#ba1a1a" stroke-linecap="round" stroke-width="4"></path>
+<circle cx="170" cy="190" fill="#ba1a1a" r="5"></circle>
+<text fill="#ba1a1a" font-family="Inter" font-size="10" font-weight="700" x="140" y="165">KORIDOR 4: Naman Teran Evakuasi &amp; Holtikultura</text>
+</g>
+<!-- Agricultural Nodes & Hubs (Green Pins) -->
+<g>
+<!-- Kabanjahe Central Agro Hub -->
+<circle cx="400" cy="280" fill="#006948" r="9"></circle>
+<circle cx="400" cy="280" fill="#006948" fill-opacity="0.25" r="14"></circle>
+<text fill="#0b1c30" font-family="Inter" font-size="12" font-weight="700" x="415" y="285">Kabanjahe (Pusat Logistik Kab.)</text>
+<!-- Berastagi Fruit & Veg Hub -->
+<circle cx="430" cy="210" fill="#006948" r="8"></circle>
+<text fill="#0b1c30" font-family="Inter" font-size="12" font-weight="700" x="445" y="215">Berastagi (Pasar Induk Ritel)</text>
+<!-- Simpang Empat Depot -->
+<circle cx="280" cy="270" fill="#006948" r="7"></circle>
+<text fill="#0b1c30" font-family="Inter" font-size="10" font-weight="600" x="220" y="305">Sentra Simpang Empat</text>
+<!-- Merek Lake Toba Gateway -->
+<circle cx="700" cy="440" fill="#006948" r="7"></circle>
+<text fill="#0b1c30" font-family="Inter" font-size="10" font-weight="600" x="610" y="460">Kolektor Merek (Arah Dairi)</text>
+</g>
+</svg>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<span>Klik koridor untuk detail simulasi teknis &amp; data logistik.</span>
+<span class="font-label-badge text-label-badge text-primary font-semibold">4 Koridor Teridentifikasi</span>
+</div>
+</div>
+<!-- Corridor Detail & Metric Simulation Card -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Interactive Detail Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex-1 flex flex-col justify-between" id="corridor-detail-card">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs bg-secondary-container text-on-secondary-container rounded font-bold">
+                DATA SIMULASI KORIDOR
+              </span>
+<span class="font-label-badge text-label-badge px-space-xs py-space-2xs bg-error-container text-on-error-container rounded font-bold" id="corridor-priority-badge">
+                PRIORITAS I
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs" id="corridor-title">
+              Koridor Berastagi — Simpang Empat
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md" id="corridor-desc">
+              Arteri vital sentra hortikultura dataran tinggi. Menghubungkan 1.450 Ha kebun wortel &amp; kubis langsung menuju jalur arteri Medan - Lau Cih.
+            </p>
+<div class="space-y-space-sm bg-surface rounded-lg p-space-md mb-space-md">
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">Panjang Total Ruas:</span>
+<span class="font-code-data-md text-code-data-md text-on-surface font-semibold" id="corridor-length">14,20 km</span>
+</div>
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">Tonase Angkut Harian:</span>
+<span class="font-code-data-md text-code-data-md text-on-surface font-semibold" id="corridor-tonnage">248 Ton / Hari</span>
+</div>
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">Kondisi Rusak Berat:</span>
+<span class="font-code-data-md text-code-data-md text-error font-semibold" id="corridor-damage">41,8% (5,9 km)</span>
+</div>
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">Poin Multikriteria MCDA:</span>
+<span class="font-code-data-md text-code-data-md text-primary font-bold" id="corridor-score">92,40 / 100</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xs">
+<div class="text-body-sm font-semibold text-on-surface mb-space-2xs">Faktor Kritis Pendukung:</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="corridor-factor">
+              Satu-satunya jalur distribusi saat jalur lingkar lereng timur Sinabung ditutup abu vulkanik. Kerusakan permukaan menyebabkan pembusukan 8% komoditas wortel dalam transit.
+            </p>
+</div>
+</div>
+<!-- Quick Info Box -->
+<div class="bg-surface-container rounded-xl p-space-md text-on-surface">
+<div class="flex items-center gap-space-xs mb-space-2xs font-semibold">
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+<span class="font-body-md text-body-md">Keterbukaan Data Spasial</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Peta ini terintegrasi dengan basis data SIMOJANG Karo &amp; peta risiko bencana BPBD Kab. Karo untuk memastikan tidak ada intervensi subjektif.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SIMPLIFIED TOP 10 RANKING WITH REASONS -->
+<section class="mb-space-2xl scroll-mt-24" id="top-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs text-primary mb-space-2xs">
+<span class="material-symbols-outlined text-[20px]">table_chart</span>
+<span class="font-label-badge text-label-badge uppercase tracking-wider">Hasil Pemeringkatan Terbuka</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Daftar 10 Ruas Prioritas Penanganan TA 2025/2026</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Peringkat dihitung otomatis melalui Multi-Criteria Decision Analysis (MCDA) terverifikasi lintas instansi.
+        </p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-badge text-label-badge px-space-md py-space-xs rounded bg-surface-container-highest text-on-surface-variant font-bold">
+          TOTAL 10 RUAS: 48,9 KM
+        </span>
+</div>
+</div>
+<!-- Civic Data Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high text-on-surface">
+<th class="py-space-md px-space-md font-label-badge text-label-badge uppercase text-center w-16">Peringkat</th>
+<th class="py-space-md px-space-md font-label-badge text-label-badge uppercase">Kode &amp; Nama Ruas</th>
+<th class="py-space-md px-space-md font-label-badge text-label-badge uppercase text-right w-24">Panjang</th>
+<th class="py-space-md px-space-md font-label-badge text-label-badge uppercase">Komoditas &amp; Tonase</th>
+<th class="py-space-md px-space-md font-label-badge text-label-badge uppercase">Alasan Utama Didahulukan (Justifikasi Objektif)</th>
+<th class="py-space-md px-space-md font-label-badge text-label-badge uppercase text-center w-36">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-primary text-on-primary font-code-data-md text-code-data-md font-bold">1</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-semibold text-on-surface">Simpang Empat – Beganding</div>
+<div class="font-label-badge text-label-badge text-on-surface-variant">KRO-018 • Kec. Simpang Empat</div>
+<span class="inline-block mt-1 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-badge text-[10px]">DATA SIMULASI RUAS</span>
+</td>
+<td class="py-space-md px-space-md text-right font-code-data-md text-code-data-md">
+                4,80 km
+              </td>
+<td class="py-space-md px-space-md">
+<div class="font-medium text-on-surface">Wortel &amp; Tomat</div>
+<div class="text-on-surface-variant font-code-data-md text-code-data-md">1.880.000 Ku/Thn</div>
+</td>
+<td class="py-space-md px-space-md max-w-md">
+                Jalur distribusi wortel 1,88 juta kuintal menuju Pasar Induk Lau Cih; perkerasan rusak berat 42% lereng curam, biaya angkut truk naik 65%.
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-space-xs py-space-2xs rounded bg-surface-container text-primary font-label-badge text-label-badge font-bold">
+                  DED SELESAI
+                </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-primary text-on-primary font-code-data-md text-code-data-md font-bold">2</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-semibold text-on-surface">Naman Teran – Sukandebi</div>
+<div class="font-label-badge text-label-badge text-on-surface-variant">KRO-042 • Kec. Naman Teran</div>
+<span class="inline-block mt-1 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-badge text-[10px]">DATA SIMULASI RUAS</span>
+</td>
+<td class="py-space-md px-space-md text-right font-code-data-md text-code-data-md">
+                5,20 km
+              </td>
+<td class="py-space-md px-space-md">
+<div class="font-medium text-on-surface">Tomat &amp; Kentang</div>
+<div class="text-on-surface-variant font-code-data-md text-code-data-md">1.700.000 Ku/Thn</div>
+</td>
+<td class="py-space-md px-space-md max-w-md">
+                Akses tunggal 1.700 ton tomat; tidak ada jalur alternatif saat ancaman erupsi Sinabung meningkat (berfungsi ganda jalur evakuasi).
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-space-xs py-space-2xs rounded bg-surface-container text-primary font-label-badge text-label-badge font-bold">
+                  USULAN INPRES
+                </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-primary text-on-primary font-code-data-md text-code-data-md font-bold">3</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-semibold text-on-surface">Tigapanah – Mulawari</div>
+<div class="font-label-badge text-label-badge text-on-surface-variant">KRO-007 • Kec. Tigapanah</div>
+<span class="inline-block mt-1 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-badge text-[10px]">DATA SIMULASI RUAS</span>
+</td>
+<td class="py-space-md px-space-md text-right font-code-data-md text-code-data-md">
+                3,90 km
+              </td>
+<td class="py-space-md px-space-md">
+<div class="font-medium text-on-surface">Kubis &amp; Cabai</div>
+<div class="text-on-surface-variant font-code-data-md text-code-data-md">1.250.000 Ku/Thn</div>
+</td>
+<td class="py-space-md px-space-md max-w-md">
+                Konektivitas kantong kemiskinan ekstrem desa Tigapanah ke pasar ekspor antarprovinsi via Jalan Nasional Merek.
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-space-xs py-space-2xs rounded bg-surface-container text-primary font-label-badge text-label-badge font-bold">
+                  APBD 2025
+                </span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-secondary text-on-secondary font-code-data-md text-code-data-md font-bold">4</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-semibold text-on-surface">Barusjahe – Sukajulu</div>
+<div class="font-label-badge text-label-badge text-on-surface-variant">KRO-089 • Kec. Barusjahe</div>
+<span class="inline-block mt-1 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-badge text-[10px]">DATA SIMULASI RUAS</span>
+</td>
+<td class="py-space-md px-space-md text-right font-code-data-md text-code-data-md">
+                6,10 km
+              </td>
+<td class="py-space-md px-space-md">
+<div class="font-medium text-on-surface">Jeruk &amp; Wortel</div>
+<div class="text-on-surface-variant font-code-data-md text-code-data-md">980.000 Ku/Thn</div>
+</td>
+<td class="py-space-md px-space-md max-w-md">
+                Kerusakan gorong-gorong drainase memutus akses angkutan 4 desa sentra jeruk siam karo saat curah hujan tinggi hulu Wampu.
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-space-xs py-space-2xs rounded bg-surface-container text-secondary font-label-badge text-label-badge font-bold">
+                  SURVEI TEKNIS
+                </span>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-secondary text-on-secondary font-code-data-md text-code-data-md font-bold">5</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-semibold text-on-surface">Munte – Sarinembah</div>
+<div class="font-label-badge text-label-badge text-on-surface-variant">KRO-104 • Kec. Munte</div>
+<span class="inline-block mt-1 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-badge text-[10px]">DATA SIMULASI RUAS</span>
+</td>
+<td class="py-space-md px-space-md text-right font-code-data-md text-code-data-md">
+                5,70 km
+              </td>
+<td class="py-space-md px-space-md">
+<div class="font-medium text-on-surface">Jagung &amp; Cabai Merah</div>
+<div class="text-on-surface-variant font-code-data-md text-code-data-md">840.000 Ku/Thn</div>
+</td>
+<td class="py-space-md px-space-md max-w-md">
+                Kondisi tanah lempung labil; pemadatan dan lapis pondasi agregat A mendesak agar truk roda enam tidak amblas di musim tanam.
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-space-xs py-space-2xs rounded bg-surface-container text-secondary font-label-badge text-label-badge font-bold">
+                  VERIFIKASI
+                </span>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-highest text-on-surface font-code-data-md text-code-data-md font-bold">6</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-semibold text-on-surface">Payung – Batukarang</div>
+<div class="font-label-badge text-label-badge text-on-surface-variant">KRO-033 • Kec. Payung</div>
+<span class="inline-block mt-1 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-badge text-[10px]">DATA SIMULASI RUAS</span>
+</td>
+<td class="py-space-md px-space-md text-right font-code-data-md text-code-data-md">
+                4,40 km
+              </td>
+<td class="py-space-md px-space-md">
+<div class="font-medium text-on-surface">Tembakau &amp; Sayur Daun</div>
+<div class="text-on-surface-variant font-code-data-md text-code-data-md">670.000 Ku/Thn</div>
+</td>
+<td class="py-space-md px-space-md max-w-md">
+                Pemulihan akses pasca-lahar dingin; mempercepat laju perputaran barang kelompok tani komoditas musiman lereng barat.
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-badge text-label-badge">
+                  TAHAP REVIEW
+                </span>
+</td>
+</tr>
+<!-- Row 7 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-highest text-on-surface font-code-data-md text-code-data-md font-bold">7</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-semibold text-on-surface">Merek – Tongging</div>
+<div class="font-label-badge text-label-badge text-on-surface-variant">KRO-112 • Kec. Merek</div>
+<span class="inline-block mt-1 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-badge text-[10px]">DATA SIMULASI RUAS</span>
+</td>
+<td class="py-space-md px-space-md text-right font-code-data-md text-code-data-md">
+                4,20 km
+              </td>
+<td class="py-space-md px-space-md">
+<div class="font-medium text-on-surface">Bawang Merah &amp; Nila</div>
+<div class="text-on-surface-variant font-code-data-md text-code-data-md">590.000 Ku/Thn</div>
+</td>
+<td class="py-space-md px-space-md max-w-md">
+                Koridor ganda agro-pariwisata Danau Toba; penurunan biaya logistik pupuk organik dari Kabanjahe menuju pesisir danau.
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-badge text-label-badge">
+                  TAHAP REVIEW
+                </span>
+</td>
+</tr>
+<!-- Row 8 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-highest text-on-surface font-code-data-md text-code-data-md font-bold">8</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-semibold text-on-surface">Juhar – Kidupen</div>
+<div class="font-label-badge text-label-badge text-on-surface-variant">KRO-056 • Kec. Juhar</div>
+<span class="inline-block mt-1 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-badge text-[10px]">DATA SIMULASI RUAS</span>
+</td>
+<td class="py-space-md px-space-md text-right font-code-data-md text-code-data-md">
+                5,10 km
+              </td>
+<td class="py-space-md px-space-md">
+<div class="font-medium text-on-surface">Kemiri &amp; Kakao</div>
+<div class="text-on-surface-variant font-code-data-md text-code-data-md">430.000 Ku/Thn</div>
+</td>
+<td class="py-space-md px-space-md max-w-md">
+                Pengentasan disparitas wilayah selatan; jalan tanah berbatu curam membahayakan keselamatan pengangkut hasil perkebunan.
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-badge text-label-badge">
+                  TAHAP REVIEW
+                </span>
+</td>
+</tr>
+<!-- Row 9 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-highest text-on-surface font-code-data-md text-code-data-md font-bold">9</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-semibold text-on-surface">Laubaleng – Kutambaru</div>
+<div class="font-label-badge text-label-badge text-on-surface-variant">KRO-121 • Kec. Laubaleng</div>
+<span class="inline-block mt-1 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-badge text-[10px]">DATA SIMULASI RUAS</span>
+</td>
+<td class="py-space-md px-space-md text-right font-code-data-md text-code-data-md">
+                5,50 km
+              </td>
+<td class="py-space-md px-space-md">
+<div class="font-medium text-on-surface">Jagung Hibrida &amp; Sawit</div>
+<div class="text-on-surface-variant font-code-data-md text-code-data-md">510.000 Ku/Thn</div>
+</td>
+<td class="py-space-md px-space-md max-w-md">
+                Integrasi logistik koridor Karo hilir - perbatasan Aceh Tenggara; menekan waktu tempuh dari 3,5 jam menjadi 1,2 jam.
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-badge text-label-badge">
+                  TAHAP REVIEW
+                </span>
+</td>
+</tr>
+<!-- Row 10 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-highest text-on-surface font-code-data-md text-code-data-md font-bold">10</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-semibold text-on-surface">Kabanjahe – Kandibata</div>
+<div class="font-label-badge text-label-badge text-on-surface-variant">KRO-015 • Kec. Kabanjahe</div>
+<span class="inline-block mt-1 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-badge text-[10px]">DATA SIMULASI RUAS</span>
+</td>
+<td class="py-space-md px-space-md text-right font-code-data-md text-code-data-md">
+                4,00 km
+              </td>
+<td class="py-space-md px-space-md">
+<div class="font-medium text-on-surface">Kol (Kubis) &amp; Bunga Potong</div>
+<div class="text-on-surface-variant font-code-data-md text-code-data-md">410.000 Ku/Thn</div>
+</td>
+<td class="py-space-md px-space-md max-w-md">
+                Bypass lingkar barat pusat kota guna mengalihkan truk ekspedisi berat dari kawasan permukiman padat Kabanjahe.
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-badge text-label-badge">
+                  TAHAP REVIEW
+                </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row justify-between items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span>Menampilkan 10 ruas teratas dari 148 segmen jalan produksi pertanian Kabupaten Karo.</span>
+<span class="font-label-badge text-label-badge text-on-surface">Metode Algoritma: Weighted Sum Model MCDA (Normalisasi Min-Max)</span>
+</div>
+</div>
+</section>
+<!-- CARA KERJA 5 LANGKAH EXPLAINER -->
+<section class="mb-space-2xl bg-surface-container-lowest rounded-xl shadow-sm p-space-lg md:p-space-xl">
+<div class="max-w-3xl mb-space-xl">
+<div class="flex items-center gap-space-xs text-primary mb-space-2xs">
+<span class="material-symbols-outlined text-[20px]">account_tree</span>
+<span class="font-label-badge text-label-badge uppercase tracking-wider">Tata Kelola Bebas Intervensi Subjektif</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Cara Kerja Penentuan Prioritas 5 Tahap</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+        Bagaimana setiap kilometer jalan dinilai secara transparan melalui sains data dan pengawasan terbuka tanpa diskriminasi wilayah politik.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-space-md relative">
+<!-- Step 1 -->
+<div class="bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm relative group hover:bg-surface-container-low transition-all">
+<div>
+<div class="font-code-data-lg text-code-data-lg text-primary font-bold mb-space-sm">01</div>
+<h4 class="font-headline-sm text-[16px] leading-snug font-bold text-on-surface mb-space-xs">Inventarisasi Ruas Spasial</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Validasi koordinat GPS dan kepemilikan aset jalan kabupaten oleh DPUTR bersama BPS dan tim desa.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs font-label-badge text-label-badge text-primary uppercase font-bold">
+          Verifikasi Lapangan
+        </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm relative group hover:bg-surface-container-low transition-all">
+<div>
+<div class="font-code-data-lg text-code-data-lg text-primary font-bold mb-space-sm">02</div>
+<h4 class="font-headline-sm text-[16px] leading-snug font-bold text-on-surface mb-space-xs">Pengelompokan Koridor</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Menghubungkan petak kebun, titik kumpul tengkulak desa, dan koridor arteri logistik menuju pasar induk.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs font-label-badge text-label-badge text-primary uppercase font-bold">
+          Analisis Jaringan
+        </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm relative group hover:bg-surface-container-low transition-all">
+<div>
+<div class="font-code-data-lg text-code-data-lg text-primary font-bold mb-space-sm">03</div>
+<h4 class="font-headline-sm text-[16px] leading-snug font-bold text-on-surface mb-space-xs">Penilaian Risiko Independen</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Pemisahan bahaya vulkanik, longsor lereng lereng terjal, dan potensi kerugian pascapanen oleh BPBD &amp; Distan.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs font-label-badge text-label-badge text-primary uppercase font-bold">
+          Matriks Dampak
+        </div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm relative group hover:bg-surface-container-low transition-all">
+<div>
+<div class="font-code-data-lg text-code-data-lg text-primary font-bold mb-space-sm">04</div>
+<h4 class="font-headline-sm text-[16px] leading-snug font-bold text-on-surface mb-space-xs">Algoritma MCDA Objektif</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Pembobotan matematis terkunci di sistem. Menghitung simulasi skenario fiskal tanpa campur tangan manual.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs font-label-badge text-label-badge text-primary uppercase font-bold">
+          Komputasi Publik
+        </div>
+</div>
+<!-- Step 5 -->
+<div class="bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm relative group hover:bg-surface-container-low transition-all">
+<div>
+<div class="font-code-data-lg text-code-data-lg text-primary font-bold mb-space-sm">05</div>
+<h4 class="font-headline-sm text-[16px] leading-snug font-bold text-on-surface mb-space-xs">SK Bupati &amp; Audit Warga</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Penetapan SK resmi dan pembukaan log riwayat perubahan anggaran untuk diawasi kelompok tani dan warga.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs font-label-badge text-label-badge text-primary uppercase font-bold">
+          Akuntabilitas Total
+        </div>
+</div>
+</div>
+</section>
+<!-- FAQ SECTION -->
+<section class="mb-space-2xl">
+<div class="flex items-center gap-space-xs text-primary mb-space-2xs">
+<span class="material-symbols-outlined text-[20px]">help_center</span>
+<span class="font-label-badge text-label-badge uppercase tracking-wider">Tanya Jawab Terbuka</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-space-lg">Pertanyaan Civic &amp; Transparansi Anggaran</h2>
+<div class="space-y-space-md">
+<!-- FAQ 1 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg">
+<button class="w-full text-left flex justify-between items-center gap-space-md focus:outline-none" onclick="toggleFaq('faq-1')">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Mengapa ruas jalan di desa saya belum masuk prioritas tahun ini?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transform transition-transform" id="faq-1-icon">expand_more</span>
+</button>
+<div class="hidden mt-space-md pt-space-md border-t-0 text-on-surface-variant font-body-md text-body-md leading-relaxed" id="faq-1">
+          Penentuan prioritas dibatasi oleh dua faktor: <strong>batas kewenangan jalan</strong> dan <strong>formula tonase komoditas</strong>. Ruas jalan desa berada di bawah kewenangan Anggaran Dana Desa (APBDes), sedangkan jalan provinsi berada di bawah Dinas BMBK Sumut. Untuk jalan kabupaten yang belum masuk tahun ini, volume komoditas per kilometer yang terdata saat ini belum melampaui ambang batas MCDA dibanding ruas kritis penghubung lintas kecamatan. Data tonase diperbarui setiap tahun bersama PPL Dinas Pertanian.
+        </div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg">
+<button class="w-full text-left flex justify-between items-center gap-space-md focus:outline-none" onclick="toggleFaq('faq-2')">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Bagaimana memastikan tidak ada titipan politik dalam penentuan nomor urut?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transform transition-transform" id="faq-2-icon">expand_more</span>
+</button>
+<div class="hidden mt-space-md pt-space-md border-t-0 text-on-surface-variant font-body-md text-body-md leading-relaxed" id="faq-2">
+          Pembobotan variabel (seperti bobot kondisi jalan 35%, tonase hortikultura 30%, risiko bencana 20%, kemiskinan ekstrem 15%) dikunci secara sistem dan disahkan melalui Berita Acara Forum Konsultasi Publik sebelum pengumpulan data dimulai. Setiap perubahan nilai atau intervensi skor disimpan dalam <em>Public Audit Log</em> yang tertera dengan timestamp kriptografis dan nama verifikator teknis, sehingga mustahil mengubah peringkat tanpa jejak digital.
+        </div>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg">
+<button class="w-full text-left flex justify-between items-center gap-space-md focus:outline-none" onclick="toggleFaq('faq-3')">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Apakah data kondisi jalan dan produksi pertanian dijamin akurat?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transform transition-transform" id="faq-3-icon">expand_more</span>
+</button>
+<div class="hidden mt-space-md pt-space-md border-t-0 text-on-surface-variant font-body-md text-body-md leading-relaxed" id="faq-3">
+          Data dihimpun melalui kolaborasi tripartite: data statistik produksi komoditas resmi BPS Kabupaten Karo, basis data spasial jaringan jalan Bappeda, serta survei International Roughness Index (IRI) oleh DPUTR. Jika terdapat ruas yang kondisi riilnya berubah (misal terkena longsor susulan), masyarakat dapat mengajukan sanggahan teknis via kanal Lapor Karo dengan menyertakan foto geotagged.
+        </div>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg">
+<button class="w-full text-left flex justify-between items-center gap-space-md focus:outline-none" onclick="toggleFaq('faq-4')">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Bagaimana masyarakat memantau hasil pekerjaan sebelum dan sesudah?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transform transition-transform" id="faq-4-icon">expand_more</span>
+</button>
+<div class="hidden mt-space-md pt-space-md border-t-0 text-on-surface-variant font-body-md text-body-md leading-relaxed" id="faq-4">
+          Setiap proyek penanganan menyertakan metrik kinerja empiris: perbandingan waktu tempuh rata-rata truk colt diesel dan biaya tarif angkut per karung wortel/kubis. Metrik ini disurvei sebelum konstruksi dimulai dan 30 hari setelah jalan selesai dibangun bersama kelompok tani serta asosiasi sopir ekspedisi lokal. Hasil evaluasi dipublikasikan terbuka di portal ini.
+        </div>
+</div>
+</div>
+</section>
+<!-- CIVIC DATA INITIATIVE BANNER -->
+<section class="bg-surface-container rounded-xl p-space-lg md:p-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">policy</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Inisiatif Satu Data Spasial Pertanian &amp; Transportasi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Penyelenggaraan keterbukaan data pembangunan jalan produksi Kabupaten Karo sesuai amanat UU No. 14 Tahun 2008 &amp; Perpres No. 39 Tahun 2019.
+        </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs shrink-0">
+<span class="px-space-md py-space-xs rounded bg-surface-container-lowest font-label-badge text-label-badge font-bold text-on-surface">DPUTR KARO</span>
+<span class="px-space-md py-space-xs rounded bg-surface-container-lowest font-label-badge text-label-badge font-bold text-on-surface">BAPPEDA</span>
+<span class="px-space-md py-space-xs rounded bg-surface-container-lowest font-label-badge text-label-badge font-bold text-on-surface">DISTAN</span>
+<span class="px-space-md py-space-xs rounded bg-surface-container-lowest font-label-badge text-label-badge font-bold text-on-surface">BPBD KARO</span>
+<span class="px-space-md py-space-xs rounded bg-surface-container-lowest font-label-badge text-label-badge font-bold text-on-surface">BPS</span>
+</div>
+</section>
+</div>
+<script>
+  // Simple interactive toggle for FAQ accordions
+  function toggleFaq(id) {
+    const el = document.getElementById(id);
+    const icon = document.getElementById(id + '-icon');
+    if (el) {
+      const isHidden = el.classList.contains('hidden');
+      if (isHidden) {
+        el.classList.remove('hidden');
+        if (icon) icon.textContent = 'expand_less';
+      } else {
+        el.classList.add('hidden');
+        if (icon) icon.textContent = 'expand_more';
+      }
+    }
+  }
+
+  // Interactive corridor selector for the Map simulation
+  const corridorData = {
+    c1: {
+      title: "Koridor Berastagi — Simpang Empat",
+      badge: "PRIORITAS I",
+      badgeClass: "bg-error-container text-on-error-container",
+      desc: "Arteri vital sentra hortikultura dataran tinggi. Menghubungkan 1.450 Ha kebun wortel & kubis langsung menuju jalur arteri Medan - Lau Cih.",
+      length: "14,20 km",
+      tonnage: "248 Ton / Hari",
+      damage: "41,8% (5,9 km)",
+      score: "92,40 / 100",
+      factor: "Satu-satunya jalur distribusi saat jalur lingkar lereng timur Sinabung ditutup abu vulkanik. Kerusakan permukaan menyebabkan pembusukan 8% komoditas wortel dalam transit."
+    },
+    c2: {
+      title: "Koridor Tigapanah — Merek",
+      badge: "PRIORITAS II",
+      badgeClass: "bg-tertiary-fixed text-on-tertiary-fixed",
+      desc: "Konektor utama sentra kubis dan bawang merah menuju koridor ekspor antarprovinsi ke Pematang Siantar dan Aceh.",
+      length: "18,60 km",
+      tonnage: "192 Ton / Hari",
+      damage: "32,4% (6,0 km)",
+      score: "84,75 / 100",
+      factor: "Penghubung klaster kantong kemiskinan perdesaan Tigapanah ke fasilitas cold storage dan pergudangan sentral Merek."
+    },
+    c3: {
+      title: "Koridor Barusjahe — Sukajulu",
+      badge: "PRIORITAS III",
+      badgeClass: "bg-secondary-container text-on-secondary-container",
+      desc: "Jalur sabuk penyangga timur untuk angkutan komoditas jeruk siam karo dan sayuran daun musiman.",
+      length: "11,50 km",
+      tonnage: "115 Ton / Hari",
+      damage: "28,1% (3,2 km)",
+      score: "78,20 / 100",
+      factor: "Rawan banjir luapan alur sungai hulu Wampu saat musim penghujan; gorong-gorong dan talud lereng memerlukan perkuatan struktur."
+    },
+    c4: {
+      title: "Koridor Naman Teran Lingkar Sinabung",
+      badge: "PRIORITAS I (BENCANA)",
+      badgeClass: "bg-error-container text-on-error-container",
+      desc: "Ruas lingkar Kawasan Rawan Bencana (KRB III) Sinabung yang melayani 920 Ha kebun tomat dan kentang lereng subur.",
+      length: "9,80 km",
+      tonnage: "164 Ton / Hari",
+      damage: "49,3% (4,8 km)",
+      score: "94,10 / 100",
+      factor: "Akses ganda: logistik pertanian harian sekaligus rute evakuasi darurat warga bila terjadi peningkatan aktivitas vulkanik Sinabung."
+    }
+  };
+
+  function selectCorridor(key) {
+    const data = corridorData[key];
+    if (!data) return;
+
+    document.getElementById('corridor-title').textContent = data.title;
+    document.getElementById('corridor-desc').textContent = data.desc;
+    document.getElementById('corridor-length').textContent = data.length;
+    document.getElementById('corridor-tonnage').textContent = data.tonnage;
+    document.getElementById('corridor-damage').textContent = data.damage;
+    document.getElementById('corridor-score').textContent = data.score;
+    document.getElementById('corridor-factor').textContent = data.factor;
+
+    const badge = document.getElementById('corridor-priority-badge');
+    badge.textContent = data.badge;
+    badge.className = "font-label-badge text-label-badge px-space-xs py-space-2xs rounded font-bold " + data.badgeClass;
+  }
+</script></div></main><footer class="w-full bg-surface-container-lowest mt-space-2xl"><div class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg py-space-2xl"><div class="flex flex-col lg:flex-row justify-between items-start gap-space-xl pb-space-xl"><div class="max-w-md"><div class="flex items-center gap-space-sm mb-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container"><span class="material-symbols-outlined text-[18px]">account_balance</span></div><span class="font-headline-sm text-headline-sm text-on-surface">SPJPP Kab. Karo</span></div><p class="font-body-md text-body-md text-on-surface-variant">Sistem Informasi Penilaian dan Perencanaan Jalan Produksi Pertanian Berbasis Data Geo-Spasial dan Transparansi Anggaran Pemerintah Kabupaten Karo.</p></div><div class="flex flex-col gap-space-sm"><span class="font-label-badge text-label-badge uppercase text-on-surface-variant tracking-wider">Mitra Kolaborasi Pemerintah Daerah</span><div class="flex flex-wrap items-center gap-space-sm"><span class="px-space-md py-space-xs rounded-lg bg-surface-container font-label-badge text-label-badge text-on-surface">DPUTR Kab. Karo</span><span class="px-space-md py-space-xs rounded-lg bg-surface-container font-label-badge text-label-badge text-on-surface">Bappeda</span><span class="px-space-md py-space-xs rounded-lg bg-surface-container font-label-badge text-label-badge text-on-surface">Dinas Pertanian</span><span class="px-space-md py-space-xs rounded-lg bg-surface-container font-label-badge text-label-badge text-on-surface">BPBD</span><span class="px-space-md py-space-xs rounded-lg bg-surface-container font-label-badge text-label-badge text-on-surface">BPS Kabupaten Karo</span></div></div></div><div class="pt-space-lg flex flex-col md:flex-row justify-between items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 Pemerintah Kabupaten Karo. Hak Cipta Dilindungi Undang-Undang.</p><p class="text-center md:text-right">Data dipublikasikan secara terbuka untuk pengawasan partisipatif masyarakat sesuai standar keterbukaan informasi publik (UU KIP No. 14/2008).</p></div></div></footer></body></html>
